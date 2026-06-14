@@ -1,4 +1,4 @@
-# 🇸🇦 Dal Shemagh Detection & Placement Challenge
+# 🇸🇦 Shemagh Detection & Placement
 
 A state-of-the-art hybrid computer vision pipeline designed to solve the **Dal Shemagh Detection Challenge**. The system determines whether a traditional Saudi Shemagh is worn correctly on a person's head or if the image contains random elements (e.g., street views, misaligned clothing, or face-only crops).
 
