@@ -92,9 +92,9 @@ pip install ultralytics timm pandas scikit-learn tqdm opencv-python ensemble-box
 
 | Hyperparameter | Configuration Value | Target Stage |
 | :--- | :--- | :--- |
-| **YOLO Base Model** | `yolo11m.pt` | Object Detection |
+| **YOLO Base Model** | `yolo11n.pt` | Object Detection |
 | **YOLO Image Size** | `640` | Training Resolution |
-| **YOLO Epochs** | `200` | Full Run Iterations |
+| **YOLO Epochs** | `50` | Full Run Iterations |
 | **ConvNeXt Model** | `convnext_tiny.fb_in22k_ft_in1k` | Classification Backbone |
 | **ConvNeXt Image Size**| `224` | Input Dimensions |
 | **Cross-Validation** | `5-Fold Stratified` | Class Balancing Strategy |
