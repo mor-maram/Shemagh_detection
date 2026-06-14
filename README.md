@@ -13,7 +13,7 @@ A state-of-the-art hybrid computer vision pipeline designed to determine whether
 
 ---
 ### 👁️ Model Detection Examples
-![Shemagh and Face Detection Visual Validation](val_batch_labels.jpg)
+![Shemagh and Face Detection Visual Validation](val_batch1_labels.jpg)
 
 ---
 ## 🛠️ Hybrid Architecture Workflow
