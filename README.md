@@ -1,7 +1,6 @@
 # 🇸🇦 Shemagh Detection & Placement
 
-A state-of-the-art hybrid computer vision pipeline designed to solve the **Dal Shemagh Detection Challenge**. The system determines whether a traditional Saudi Shemagh is worn correctly on a person's head or if the image contains random elements (e.g., street views, misaligned clothing, or face-only crops).
-
+A state-of-the-art hybrid computer vision pipeline designed to determine whether a traditional Saudi Shemagh is worn correctly on a person's head or if the image contains random elements (e.g., street views, misaligned clothing, or face-only crops).
 ---
 
 ## 🚀 Key System Features
@@ -13,7 +12,10 @@ A state-of-the-art hybrid computer vision pipeline designed to solve the **Dal S
 * **Class-Wise Non-Maximum Suppression (NMS):** Ensures zero-duplicate bounding boxes on heavily overlapping landmarks.
 
 ---
+### 👁️ Model Detection Examples
+![Shemagh and Face Detection Visual Validation](val_batch_labels.jpg)
 
+---
 ## 🛠️ Hybrid Architecture Workflow
 
 ```text
@@ -101,6 +103,10 @@ pip install ultralytics timm pandas scikit-learn tqdm opencv-python ensemble-box
 
 ---
 
+### 📈 Model Training Results & Metrics
+![YOLO Training Results Curves](results.png)
+
+---
 ## 🏃 Run the Complete Execution Pipeline
 
 To launch the automated end-to-end processing pipeline—which includes training, geometric filtering, pseudo-label creation, vision transformer refinement, and output tracking—simply execute the main module file:
