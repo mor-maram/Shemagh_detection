@@ -1,0 +1,7 @@
+names:
+- Face
+- Shemagh
+nc: 2
+path: .
+train: C:\Users\meme7\Downloads\train_fold2.txt
+val: C:\Users\meme7\Downloads\val_fold2.txt
