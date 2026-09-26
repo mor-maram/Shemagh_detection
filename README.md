@@ -1,21 +1,24 @@
-# 🇸🇦 Shemagh Detection & Placement
+# 🇸🇦 Shemagh Detection & Placement System
 
 A state-of-the-art hybrid computer vision pipeline designed to determine whether a traditional Saudi Shemagh is worn correctly on a person's head or if the image contains random elements (e.g., street views, misaligned clothing, or face-only crops).
+
 ---
 
 ## 🚀 Key System Features
 
-* **Hybrid Two-Stage Pipeline:** Combines real-time object detection (**YOLO11m**) with high-fidelity vision transformers (**ConvNeXt Tiny**).
+* **Hybrid Two-Stage Pipeline:** Combines real-time object detection (**YOLO11**) with high-fidelity vision transformers (**ConvNeXt Tiny**).
 * **Test-Time Augmentation (TTA) & WBF:** Uses multi-scale inputs merged via **Weighted Boxes Fusion (WBF)** for pixel-perfect localization.
 * **Automated Pseudo-Labeling Pipeline:** Generates high-confidence automated training annotations on the test dataset to combat domain shift.
 * **Geometric Feature Heuristics:** Evaluates head-to-shemagh symmetry, intersection ratios, vertical bounds, and center displacements.
 * **Class-Wise Non-Maximum Suppression (NMS):** Ensures zero-duplicate bounding boxes on heavily overlapping landmarks.
 
 ---
+
 ### 👁️ Model Detection Examples
 ![Shemagh and Face Detection Visual Validation](runs/detect/val/val_batch1_labels.jpg)
 
 ---
+
 ## 🛠️ Hybrid Architecture Workflow
 
 ```text
@@ -23,7 +26,7 @@ A state-of-the-art hybrid computer vision pipeline designed to determine whether
   │
   ▼
 ┌──────────────┐
-│   YOLO11m    │ ───► Detects Spatial Coordinates for Face & Shemagh
+│   YOLO11     │ ───► Detects Spatial Coordinates for Face & Shemagh
 └──────────────┘
   │
   ▼
@@ -34,7 +37,7 @@ A state-of-the-art hybrid computer vision pipeline designed to determine whether
   │
   ▼
 ┌──────────────┐
-│   ConvNeXt   │ ───► Final Classification Check (True/Correct vs False/Incorrect)
+│   ConvNeXt   │ ───► Final Classification Check (Correct vs Incorrect Placement)
 └──────────────┘
   │
   ▼
