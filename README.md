@@ -43,7 +43,25 @@ A state-of-the-art hybrid computer vision pipeline designed to determine whether
   ▼
 [Final Submission File]
 ```
+## 📊 Benchmark & Evaluation Results
 
+The models were evaluated using Stratified K-Fold Cross-Validation on the official dataset:
+
+### 1. ConvNeXt Placement Classifier
+| Metric | Score | Details |
+| :--- | :---: | :--- |
+| **Accuracy** | **98.47%** | 129 / 131 validation images classified correctly |
+| **Precision** | **99.49%** | Weighted average across classes |
+| **Recall** | **98.47%** | Weighted average across classes |
+| **F1-Score** | **98.85%** | Robust balance against class imbalance |
+
+### 2. YOLO11 Detection Performance
+| Metric | Score | Description |
+| :--- | :---: | :--- |
+| **Precision** | **89.58%** | Accuracy of detected bounding boxes |
+| **Recall** | **52.94%** | Detection coverage of landmarks |
+| **mAP@50** | **72.90%** | Mean Average Precision at IoU = 0.50 |
+| **mAP@50-95**| **58.22%** | Strict Average Precision across multiple thresholds |
 ---
 
 ## 📊 Dataset & Competition Source
